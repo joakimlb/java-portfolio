@@ -15,12 +15,18 @@
     </parent>
 
     <dependencies>
-        <!-- Add your dependencies here -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Add your build plugins here -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
 
