@@ -44,4 +44,4 @@ Each subdirectory contains its own `README.md` with build and run instructions. 
 
 ## Contact
 
-**Joakim** — [joakimbusiness224@gmail.com](mailto:joakimbusiness224@gmail.com)
+**Joakim** — [joakimbloch0@gmail.com](mailto:joakimbusiness224@gmail.com)
