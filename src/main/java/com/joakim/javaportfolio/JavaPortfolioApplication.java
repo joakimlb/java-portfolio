@@ -29,6 +29,7 @@ public class JavaPortfolioApplication {
                 System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
             } else {
                 System.out.println("Sorry, that is not correct..");
+                System.out.println("Try again! Please input a number between 1 and 10:");
             } 
         } catch (Exception e) {
             System.out.println("Invalid input. Please enter a valid number.");
