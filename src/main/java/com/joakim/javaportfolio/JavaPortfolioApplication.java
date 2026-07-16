@@ -27,7 +27,7 @@ public class JavaPortfolioApplication {
                 System.out.println("Please input a number between 1 and 10.");
             } else if (userGuess == randomNumber) {
                 System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
-            } else if (userGuess != randomNumber) {
+            } else {
                 System.out.println("Sorry, the correct number was: " + randomNumber);
             } 
         } else {
