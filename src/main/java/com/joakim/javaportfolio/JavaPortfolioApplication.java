@@ -20,15 +20,19 @@ public class JavaPortfolioApplication {
         System.out.println("Can you guess what it is?");
         System.out.println("Please input a number between 1 and 10:"); 
 
-        int userGuess = scanner.nextInt();
+        if (scanner.hasNextInt()) {
+            int userGuess = scanner.nextInt();
 
-        if (userGuess !=  || userGuess != 1-10) {
-            System.out.println("Please input a valid number");
-        } else if (userGuess != randomNumber) {
-            System.out.println("Wrong.. better luck next time");
-        } else if (userGuess == randomNumber) {
-            System.out.println("Correct!");
-        }
+            if (userGuess < 1 || userGuess > 10) {
+                System.out.println("Please input a number between 1 and 10.");
+            } else if (userGuess == randomNumber) {
+                System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
+            } else if (userGuess != randomNumber) {
+                System.out.println("Sorry, the correct number was: " + randomNumber);
+            } 
+        } else {
+                System.out.println("Invalid input. Please enter a valid number.");
+            }
 
         System.out.println("Thanks for playing!");
     }
