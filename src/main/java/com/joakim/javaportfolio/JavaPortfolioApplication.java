@@ -28,7 +28,7 @@ public class JavaPortfolioApplication {
             } else if (userGuess == randomNumber) {
                 System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
             } else {
-                System.out.println("Sorry, the correct number was: " + randomNumber);
+                System.out.println("Sorry, that is not correct..");
             } 
         } catch (Exception e) {
             System.out.println("Invalid input. Please enter a valid number.");
