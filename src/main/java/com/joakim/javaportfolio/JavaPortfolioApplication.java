@@ -35,5 +35,6 @@ public class JavaPortfolioApplication {
             }
 
         System.out.println("Thanks for playing!");
+        scanner.close();
     }
 }
