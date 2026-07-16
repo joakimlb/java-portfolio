@@ -1,16 +1,11 @@
 package com.joakim.javaportfolio;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.util.Scanner;
 
-@SpringBootApplication
 public class JavaPortfolioApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JavaPortfolioApplication.class, args);
-
+        
         Scanner scanner = new Scanner(System.in);
 
         int randomNumber = (int) (Math.random() * 10) + 1;
