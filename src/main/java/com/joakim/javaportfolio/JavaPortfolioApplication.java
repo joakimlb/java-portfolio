@@ -19,21 +19,23 @@ public class JavaPortfolioApplication {
         System.out.println("Please input a number between 1 and 10:"); 
 
         // Loop to allow the user to guess until they input a valid number
-        while (scanner.hasNextInt()) 
-        try {
-            int userGuess = scanner.nextInt();
+        while (true) {
+            if (scanner.hasNextInt()) {
+                int userGuess = scanner.nextInt();
 
-            if (userGuess < 1 || userGuess > 10) {
-                System.out.println("Please input a number between 1 and 10.");
-            } else if (userGuess == randomNumber) {
-                System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
+                if (userGuess < 1 || userGuess > 10) {
+                    System.out.println("Please input a number between 1 and 10.");
+                } else if (userGuess == randomNumber) {
+                    System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
+                    break;
+                } else {
+                    System.out.println("Sorry, that is not correct..");
+                    System.out.println("Try again! Please input a number between 1 and 10:");
+                }
             } else {
-                System.out.println("Sorry, that is not correct..");
-                System.out.println("Try again! Please input a number between 1 and 10:");
-            } 
-        } catch (Exception e) {
-            System.out.println("Invalid input. Please enter a valid number.");
-            scanner.next(); // Clear the invalid input
+                System.out.println("Invalid input. Please enter a valid number.");
+                scanner.next(); // Clear the invalid input
+            }
         }
 
         // Close the scanner and end the game
