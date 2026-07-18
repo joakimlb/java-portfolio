@@ -1,4 +1,4 @@
-package com.joakim.javaportfolio;
+package com.example.javaportfolio;
 
 import java.util.Scanner;
 
